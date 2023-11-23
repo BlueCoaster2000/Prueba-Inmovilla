@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Merriweather+Sans:wght@500;700&family=Source+Sans+3:wght@300&display=swap");
+
+@font-face {
+  font-family: "fontello";
+  src: url("./font/fontello.eot?42455866");
+  src: url("./font/fontello.eot?42455866#iefix") format("embedded-opentype"),
+    url("./font/fontello.woff?42455866") format("woff"),
+    url("./font/fontello.ttf?42455866") format("truetype"),
+    url("./font/fontello.svg?42455866#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif; /* Aplica la fuente Source Sans Pro */
+  font-weight: 300;
+  color: #333333;
+  background-image: url("https://andrewbanchich.github.io/identity-jekyll-theme/assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.8;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  font-size: 120%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+
+/* Ajustes para los elementos li y a dentro de .icons */
+.icons li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em; /* Ajusta el ancho del contenedor del icono */
+  height: 5em; /* Ajusta la altura del contenedor del icono */
+  border-radius: 50%; /* Borde circular */
+  border: 1px solid #ccc; /* Borde del círculo */
+  color: #777;
+}
+
+/* Ajustes para el tamaño de los iconos */
+.icons li a .icon {
+  font-size: 250%; /* Tamaño más grande del ícono */
+}
+
+/*END: Iconos*/
+
+/*Inicio Avatar*/
+.avatar {
+  width: 150px; /* Tamaño inicial para el contenedor circular */
+  max-width: 100%; /* Hace que sea responsive */
+  height: auto; /* Para mantener la proporción */
+  border-radius: 50%; /* Hace que el borde sea circular */
+  overflow: hidden; /* Oculta cualquier contenido fuera del borde circular */
+  display: flex; /* Usa flexbox para centrar la imagen */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 0 auto; /* Centra el contenedor en su contenedor padre */
+}
+
+.avatar img {
+  width: 100%; /* Ajusta la imagen al contenedor circular */
+  height: auto; /* Para mantener la proporción */
+  border-radius: 50%;
+  display: block;
+}
+/*Fin Avatar*/
+
+/*Titulos y elementos del Main*/
+#main header {
+  text-transform: uppercase;
+}
+#main header h1 {
+  font-size: 35px;
+  line-height: 52px;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+#main header p {
+  font-size: 19px;
+  line-height: 37px;
+  letter-spacing: 3px;
+}
+
+/*END Titulos y elementos del Main*/
+
+/* Estilos para la tarjeta (card) */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px; /* Ancho máximo de la tarjeta */
+  background-color: #fff; /* Color de fondo de la tarjeta */
+}
+
+/* Estilos para el contenido dentro de la tarjeta */
+.card section {
+  margin-bottom: 20px;
+}
+
+/* Footer tarjeta*/
+.card #footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.8em;
+}
+
+#main footer li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#main footer li a {
+  text-decoration: none;
+}
+
+/*END Footer tarjeta*/
+#footer {
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 20px; /* Espaciado dentro del footer */
+  position: fixed;
+  bottom: 0;
+  font-size: 1.5em;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+/* Reset de los estilos de la lista */
+#footer .copyright {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para los elementos li dentro del footer */
+#footer .copyright li {
+  display: inline; /* Coloca los elementos li en la misma línea */
+  white-space: nowrap; /* Evita que el texto se rompa y se mantenga en la misma línea */
+  margin-right: 10px; /* Ajusta el espaciado entre los elementos li */
+}

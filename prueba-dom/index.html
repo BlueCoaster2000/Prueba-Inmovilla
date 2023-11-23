@@ -1,0 +1,35 @@
+<div id="cabecera">
+  <h2>Probando con jQuery</h2>
+</div>
+
+<form
+  id="formularioContacto"
+  class="formularioTipo1"
+  method="get"
+  action="accion.html"
+>
+  <p>Si quieres contactar con nosotros envíanos este formulario relleno:</p>
+
+  <label for="nombre"
+    ><span>Nombre:</span>
+    <input id="nombre" type="text" name="nombre" />
+  </label>
+
+  <label for="email"
+    ><span>Correo electrónico:</span>
+    <input id="email" type="text" name="email" />
+  </label>
+
+  <label for="sexo"
+    ><span>Sexo:</span>
+    <select id="sexo">
+      <option value="M">Mujer</option>
+      <option value="H">Hombre</option>
+    </select>
+  </label>
+
+  <label>
+    <input type="submit" value="Enviar" />
+    <input type="reset" value="Cancelar" />
+  </label>
+</form>

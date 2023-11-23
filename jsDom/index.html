@@ -1,0 +1,56 @@
+<div id="cabecera">
+    <h2>Probando con JavaScript</h2>
+</div>
+
+<form id="formularioContacto" class="formularioTipo1" method="get" action="accion.html">
+    <p>Si quieres contactar con nosotros envíanos este formulario relleno:</p>
+
+    <label for="nombre"><span>Nombre:</span>
+        <input id="nombre" type="text" name="nombre" />
+    </label>
+
+    <label for="email"><span>Correo electrónico:</span>
+        <input id="email" type="text" name="email" />
+    </label>
+
+    <label for="sexo"><span>Sexo:</span>
+        <select id="sexo">
+            <option value="M">Mujer</option>
+            <option value="H">Hombre</option>
+        </select>
+    </label>
+
+    <label>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar">
+    </label>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 1. Cambiar el valor de la propiedad "name" del input de email por "correo"
+        document.getElementById('email').setAttribute('name', 'correo');
+
+        // 2. Cambiar el texto del contenido de la etiqueta H2 por "Formulario JavaScript"
+        document.querySelector('h2').textContent = 'Formulario JavaScript';
+
+        // 3. Poner en negrita la primera etiqueta label
+        document.querySelector('label').style.fontWeight = 'bold';
+
+        // 4. Obtener el value de la opción seleccionada en "sexo"
+        document.getElementById('sexo').addEventListener('change', function() {
+            var valorSeleccionado = this.value;
+            console.log('Opción seleccionada:', valorSeleccionado);
+            // 5. Mostrar cuál opción ha seleccionado con un alert()
+            alert('Opción seleccionada: ' + valorSeleccionado);
+        });
+
+         // 6. Ocultar la cabecera con alguna animación (desvanecimiento)
+        var cabecera = document.getElementById('cabecera');
+        cabecera.style.opacity = '0';
+        setTimeout(function() {
+            cabecera.style.opacity = '1';
+            cabecera.style.transition = 'opacity 0.5s ease-out';
+        }, 1000);
+    });
+</script>
